@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+  profiles:
+    active: native
+  server:
+    port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    lease-renewal-interval-in-seconds: 0
